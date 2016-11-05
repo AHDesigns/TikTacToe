@@ -13,7 +13,13 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(bodyParser.json());
-app.use('/', express.static(path.join(base, 'build')));
+// app.use('/', express.static(path.join(base, 'build/index.html')));
+
+app.get('/', function (req, res) {
+	res.sendFile(path.join(base, '/build/index.html'));
+});
+
+app.use('/', express.static(path.join(base, '/build/js')));
 
 http.createServer(app).listen(port, () => {
     console.log(`Server is listening on Port ${port}`);

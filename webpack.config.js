@@ -8,7 +8,9 @@ const sassLoaders = ['css-loader', 'postcss-loader', 'sass-loader'];
 
 const config = {
     //  Define where the clientside js has it's entry
-    entry: ['babel-polyfill', './src/app'],
+    entry: {
+        app: ['./src/app']
+    },
     //  Define where all js should be compiled to
     output: {
         path: './build',
@@ -43,7 +45,8 @@ const config = {
             '', '.js', '.scss'
         ],
         root: [path.join(__dirname, './src')]
-    }
+    },
+    devServer: { inline: true }
 };
 
 module.exports = config;
