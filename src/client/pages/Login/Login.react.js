@@ -7,8 +7,8 @@ import { changeName } from '../../modules/userDetails/actions.js'
 
 const Login = ({name, changeName}) => (
   <div className="Login">
-    I am the index, go to the
-    <Link to="/login">login</Link>
+    I am the index, go to the page
+    <Link to="/login">login Page</Link>
     <div onClick={() => changeName()}>{name}</div>
   </div>
 );

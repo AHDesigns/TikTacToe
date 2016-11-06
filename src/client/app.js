@@ -1,21 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Router, browserHistory } from 'react-router';
+import { Router, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
+import routes from './routes.js';
 import store from './modules/rootStore.js';
-
-import Login from './pages/Login/Login.react.js';
-import Login2 from './pages/Login/Login2.react.js';
 
 import './styles/global.scss';
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router history={browserHistory} >
-      <Route path="/" component={Login}/>
-      <Route path="login" component={Login2}/>
-      <Route path="*" component={Login}/>
-    </Router>
+    <Router history={browserHistory} routes={routes} />
   </Provider>,
   document.getElementById('wrapper')
 );
