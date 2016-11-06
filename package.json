@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src/server/index",
-    "start-dev": "webpack-dev-server --content-base build/",
+    "start": "webpack-dev-server --inline --hot --content-base build/",
+    "start-dev": "webpack-dev-server --inline --hot --content-base build/",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/webpack --config ./webpack.config.js",
-    "build-watch": "npm run build -- --watch"
+    "build": "./node_modules/.bin/webpack --config ./webpack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -16,7 +15,8 @@
   "dependencies": {
     "express": "^4.14.0",
     "react": "^15.3.2",
-    "react-dom": "^15.3.2"
+    "react-dom": "^15.3.2",
+    "redux-logger": "^2.7.4"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.1",
@@ -32,9 +32,9 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "http": "0.0.0",
     "node-sass": "^3.11.1",
-    "path": "^0.12.7",
     "postcss-loader": "^1.1.0",
-    "react-hot-loader": "^3.0.0-beta.6",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0",
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",

@@ -9,7 +9,7 @@ const sassLoaders = ['css-loader', 'postcss-loader', 'sass-loader'];
 const config = {
     //  Define where the clientside js has it's entry
     entry: {
-        app: ['./src/app']
+        app: ['./src/client/app']
     },
     //  Define where all js should be compiled to
     output: {
