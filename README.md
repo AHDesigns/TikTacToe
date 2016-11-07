@@ -1,3 +1,3 @@
 # react-redux-boiler
 
-yay
+still needs eslint and hot reload
