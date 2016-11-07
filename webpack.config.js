@@ -22,7 +22,7 @@ const config = {
                 //  Compiles all ES6 to ES5
                 test: /\.js$/,
                 exclude: /(__tests__|node_modules)/,
-                loader: 'babel-loader'
+                loader: 'babel-loader',
             }, {
                 //  All scss files are extracted and put through the loaders from above
                 test: /\.scss$/,

@@ -1,0 +1,15 @@
+const formInputs = [
+  {
+    name: 'Username',
+    type: 'text',
+    placeholder: 'username or email ',
+    required: true
+  },
+  {
+    name: 'Password',
+    type: 'password',
+    placeholder: 'password',
+    required: true
+  }
+]
+<InputForm formInputFieldsArray={formInputs} />

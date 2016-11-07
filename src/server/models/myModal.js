@@ -2,25 +2,35 @@ import mongoose from 'mongoose';
 import autoIncrement from 'mongodb-autoincrement';
 
 export const schema = new mongoose.Schema({
-    name: String,
+  name: String,
 });
 
 schema.plugin(autoIncrement.mongoosePlugin);
 
 schema.statics.getSomething = (callback) => {
-    myModel.find().exec((err, docs) => {
-        callback(err, docs);
-    });
+  MYMODEL.find().exec((err, docs) => {
+    callback(err, docs);
+  });
 };
 
-let scheme;
+schema.statics.addstuff = (name, callback) => {
+  MYMODEL.create({"_id": 0, "name": name}, (error, env) => {
+    if (error) {
+      callback('failed', null)
+    } else {
+      callback(null, name);
+    }
+  }
+)}
+
+let myModel;
 
 try {
-    scheme = mongoose.model('myModel');
+  myModel = mongoose.model('myModel');
 } catch (e) {
-    scheme = mongoose.model('myModel', schema);
+  myModel = mongoose.model('myModel', schema);
 }
 
-const myModel = scheme;
+const MYMODEL = myModel;
 
-export default myModel;
+export default MYMODEL;
