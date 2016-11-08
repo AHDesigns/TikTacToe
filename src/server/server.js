@@ -42,7 +42,7 @@ app.get('*', (req, res) => {
     } else if (renderProps) {
       const router = (
           <Provider store={store}>
-            <RouterContext {...renderProps}/>
+              <RouterContext {...renderProps}/>
           </Provider>
       );
       res.status(200).send(servePage(router));

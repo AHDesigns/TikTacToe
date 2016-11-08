@@ -7,13 +7,13 @@ import Greeting from './pages/Login/Greeting.react.js';
 import NoPage from './pages/Login/NotFound.react.js';
 
 const Common = (props) => (
-  <NavBar>{props.children}</NavBar>
+    <NavBar>{props.children}</NavBar>
 );
 
 export default (
-  <Route path="/" component={Common}>
-      <IndexRoute component={Greeting}/>
-      <Route path="/login" component={Login}/>
-      <Route path="*" component={NoPage}/>
-  </Route>
+    <Route path="/" component={Common}>
+            <IndexRoute component={Greeting}/>
+            <Route path="/login" component={Login}/>
+            <Route path="*" component={NoPage}/>
+    </Route>
 );

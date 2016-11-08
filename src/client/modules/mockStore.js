@@ -1,13 +1,11 @@
 function getDefaultState() {
-    return {
-        config: {}
-    };
+  return {config: {}};
 }
 
 export function createMockStore() {
-    return {
-        subscribe: () => {},
-        dispatch: () => {},
-        getState: () => getDefaultState()
-    };
+  return {
+    subscribe: () => {},
+    dispatch: () => {},
+    getState: () => getDefaultState()
+  };
 }

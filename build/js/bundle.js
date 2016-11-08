@@ -27993,7 +27993,7 @@
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
 
 	var _react = __webpack_require__(2);
@@ -28021,19 +28021,19 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var Common = function Common(props) {
-	  return _react2.default.createElement(
-	    _NavBarReact2.default,
-	    null,
-	    props.children
-	  );
+	    return _react2.default.createElement(
+	        _NavBarReact2.default,
+	        null,
+	        props.children
+	    );
 	};
 
 	exports.default = _react2.default.createElement(
-	  _reactRouter.Route,
-	  { path: '/', component: Common },
-	  _react2.default.createElement(_reactRouter.IndexRoute, { component: _GreetingReact2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _LoginReact2.default }),
-	  _react2.default.createElement(_reactRouter.Route, { path: '*', component: _NotFoundReact2.default })
+	    _reactRouter.Route,
+	    { path: '/', component: Common },
+	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _GreetingReact2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _LoginReact2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '*', component: _NotFoundReact2.default })
 	);
 
 /***/ },

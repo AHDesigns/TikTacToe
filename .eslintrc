@@ -5,6 +5,9 @@
     "browser": true,
     "mocha": true
   },
+  "plugins": [
+    "react","import"
+  ],
   "rules": {
     // Validate Indentation
     "indent": [2, 2, {"SwitchCase": 1}],
