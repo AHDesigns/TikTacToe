@@ -12,8 +12,8 @@ const Common = (props) => (
 
 export default (
   <Route path="/" component={Common}>
-    <IndexRoute component={Greeting}/>
-    <Route path="/login" component={Login}/>
-    <Route path="*" component={NoPage}/>
+      <IndexRoute component={Greeting}/>
+      <Route path="/login" component={Login}/>
+      <Route path="*" component={NoPage}/>
   </Route>
 );
