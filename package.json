@@ -4,10 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon src/server/index.js",
     "start-dev": "npm run build-watch & nodemon src/server/index.js",
     "test": "_mocha $(find ./src -name '*.specs.js') --compilers js:babel-core/register -r jsdom-global/register -r babel-polyfill",
     "coverage": "./node_modules/.bin/nyc --reporter=lcov npm test && open ./coverage/lcov-report/index.html",
-    "build": "./node_modules/.bin/webpack --config ./webpack.config.js",
+    "build": "./node_modules/.bin/webpack --config ./webpack-dev.config.js",
+    "build-prod": "npm run build-client & npm run build-server",
+    "build-client": "./node_modules/.bin/webpack --config ./webpack-client.config.js -p",
+    "build-server": "./node_modules/.bin/webpack --config ./webpack-server.config.js -p",
     "build-watch": "npm run build -- --watch",
     "lint": "eslint src"
   },

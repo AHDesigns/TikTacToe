@@ -49,4 +49,18 @@ const config = {
     devServer: { inline: true }
 };
 
+config.plugins.push(new webpack.optimize.DedupePlugin());
+
+// Uglify and optimize for production
+config.plugins.push(
+      new webpack.optimize.UglifyJsPlugin({
+          minimize: true,
+          comments: false,          // output comments?
+          compress: {
+              warnings: false,      // warn about potentially dangerous optimizations/code
+              screw_ie8: true,      // If you don't need IE8 support
+          }
+      })
+);
+
 module.exports = config;
