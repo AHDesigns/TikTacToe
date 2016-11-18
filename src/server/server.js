@@ -6,7 +6,7 @@ import bodyParser from 'body-parser';
 import React from 'react';
 import { Provider } from 'react-redux';
 import { match, RouterContext } from 'react-router';
-import mongoose from 'mongoose';
+// import mongoose from 'mongoose';
 import store from '../client/modules/rootStore.js';
 import routes from '../client/routes.js';
 import { servePage } from './servePage';
@@ -21,8 +21,8 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/react-test');
+// mongoose.Promise = global.Promise;
+// mongoose.connect('mongodb://localhost:27017/react-test');
 
 app.use(bodyParser.json());
 

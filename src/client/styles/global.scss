@@ -1,4 +1,8 @@
-// @import "sky-toolkit-core/all";
-// @import "sky-toolkit-ui/all";
+@import "./utils/reset";
+@import "./utils/variables";
+@import "./utils/standardTags";
 @import "./utils/helpers";
+
 @import "./components/IndexPage";
+@import "./components/squareLoaders";
+@import "./components/button";

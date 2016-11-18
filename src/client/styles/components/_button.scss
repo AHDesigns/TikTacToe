@@ -1,0 +1,12 @@
+.c-btn {
+  border: thick solid $colPrimaryAccent--faded;
+  padding: 0.2em;
+  border-radius: 0.2em;
+  background-color: rgba(0,0,0,0);
+
+  &:hover {
+    background-color: $colPrimaryAccent--faded;
+    color: $colPrimary;
+    transition: $transitionFast;
+  }
+}

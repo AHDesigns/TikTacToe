@@ -1,18 +1,10 @@
-// html {
-//   background-color: #fff;
-//   background-image: none;
-// }
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-  color: white;
-}
-
 .vAlign {
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
+}
+.capsLock {
+  text-transform: uppercase;
 }
 .heightfix {
   height: 100%;

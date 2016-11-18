@@ -23,7 +23,8 @@ const config = {
                 test: /\.js$/,
                 exclude: /(__tests__|node_modules)/,
                 loader: 'babel-loader',
-            }, {
+            },
+            {
                 //  All scss files are extracted and put through the loaders from above
                 test: /\.scss$/,
                 loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!'))

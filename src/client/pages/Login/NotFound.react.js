@@ -8,10 +8,12 @@ class Login extends Component {
 
   render() {
     return (
-      <div className="Login">
-        404
-        <Link to="/">home</Link>
-      </div>
+        <div className="primaryHeading heightfix">
+            <h2>
+                Oh Dear! <br />This page doesn't exist<br />
+                <div className="c-btn c-btn--inverse"><Link to="/">Return Home</Link></div>
+            </h2>
+        </div>
     );
   }
 }

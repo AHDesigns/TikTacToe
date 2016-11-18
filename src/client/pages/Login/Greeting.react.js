@@ -7,9 +7,18 @@ import { changeName } from '../../modules/userDetails/actions.js';
 
 const Login = ({name, changeName}) => (
   <div className="Login">
-      I am the index, go to the page
-      <Link to="/login">login Page</Link>
-      <div onClick={() => changeName()}>{name}</div>
+      <div className="loader">
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="square"></div>
+          <div className="square"></div>
+      </div>
+      <div className="primaryHeading"><h2>Page Coming Soon...</h2></div>
   </div>
 );
 

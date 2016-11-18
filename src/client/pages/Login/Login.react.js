@@ -46,9 +46,7 @@ class Login extends Component {
         <div className="Login">
             Hi
             <InputForm formInputFieldsArray={formInputs} />
-            <img alt="small Image" id="bigImage" className={this.state.displayState} width="1000px" height="400px" src="/img/prog.jpg"/>
-            {/* <img alt="large image" className={this.state.displayStateLoading} width="1000px" height="400px" src="/img/largeImage.png" onLoad={this.handleImageLoad}/> */}
-            {/* <div id="myImg"/> */}
+            <div className="myImg"/>
         </div>
     );
   }
