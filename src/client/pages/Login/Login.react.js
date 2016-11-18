@@ -15,9 +15,9 @@ const Login = ({name, changeName}) => (
 
 const mapStateToProps = (state) => ({
   name: getUserDetails(state)
-})
+});
 const mapDispatchToProps = ({
   changeName
-})
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Login);
