@@ -1,0 +1,12 @@
+.c-heroTitle {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+}
+.c-heroTitle--100 {
+  transform: translateY(-100%);
+}
+
+.c-heroTitle--65 {
+  transform: translateY(-65%);
+}

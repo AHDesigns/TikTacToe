@@ -1,0 +1,26 @@
+@font-face {
+  src: url("/img/BrandonText-Bold.otf") format("opentype");
+  font-family: 'BrandonTextBold';
+}
+body {
+  font-family: BrandonTextBold;
+  background-color: $colPrimary;
+  color: $colSecondary;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  transition-timing-function: ease-in-out;
+}
+h2 {
+  font-size: 72px;
+  font-weight: 300;
+  font-style: normal;
+}
+h3 {
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

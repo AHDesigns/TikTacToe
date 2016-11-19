@@ -1,2 +1,7 @@
 node_modules
 .DS_Store
+data
+npm-debug.log
+coverage
+.nyc_output
+prod.zip

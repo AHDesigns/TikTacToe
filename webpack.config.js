@@ -9,7 +9,7 @@ const sassLoaders = ['css-loader', 'postcss-loader', 'sass-loader'];
 const config = {
     //  Define where the clientside js has it's entry
     entry: {
-        app: ['./src/client/app']
+        app: './src/client/app'
     },
     //  Define where all js should be compiled to
     output: {
@@ -22,8 +22,9 @@ const config = {
                 //  Compiles all ES6 to ES5
                 test: /\.js$/,
                 exclude: /(__tests__|node_modules)/,
-                loader: 'babel-loader'
-            }, {
+                loader: 'babel-loader',
+            },
+            {
                 //  All scss files are extracted and put through the loaders from above
                 test: /\.scss$/,
                 loader: ExtractTextPlugin.extract('style-loader', sassLoaders.join('!'))

@@ -1,23 +1,58 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
-import { Link } from 'react-router';
 
-import { getUserDetails } from '../../modules/userDetails/reducer.js';
-import { changeName } from '../../modules/userDetails/actions.js'
+import InputForm from '../../modules/InputForm/InputForm.react.js';
+import { initialiseEmptyInputs } from '../../modules/InputForm/actions.js'
 
-const Login = ({name, changeName}) => (
-  <div className="Login">
-    I am the index, go to the page
-    <Link to="/login">login Page</Link>
-    <div onClick={() => changeName()}>{name}</div>
-  </div>
-);
+const formInputs = [
+  {
+    name: 'Username',
+    type: 'text',
+    placeholder: 'username or email ',
+    required: true
+  },
+  {
+    name: 'Password',
+    type: 'password',
+    placeholder: 'password',
+    required: true
+  }
+]
 
-const mapStateToProps = (state) => ({
-  name: getUserDetails(state)
-});
+class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      displayState: "",
+      displayStateLoading: "noDisplay"
+    }
+
+    this.handleImageLoad = this.handleImageLoad.bind(this);
+  }
+  componentWillMount(){
+    this.props.initialiseEmptyInputs(formInputs);
+  }
+
+  handleImageLoad(){
+    console.log("loaded");
+    this.setState({
+      displayState: "noDisplay",
+      displayStateLoading: ""
+    })
+  }
+
+  render() {
+    return (
+        <div>
+            <InputForm formInputFieldsArray={formInputs} />
+        </div>
+    );
+  }
+}
+
 const mapDispatchToProps = ({
-  changeName
-});
+  initialiseEmptyInputs
+})
 
-export default connect(mapStateToProps, mapDispatchToProps)(Login);
+
+export default connect(null, mapDispatchToProps)(Login);
