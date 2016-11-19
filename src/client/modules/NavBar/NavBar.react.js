@@ -3,12 +3,12 @@ import { Link } from 'react-router'
 
 const NavBar = ({children}) => (
   <div>
-    {/* <div className="c-navBar">
+    <div className="c-navBar">
       <Link to="/login">Login</Link>
       <Link to="/about">About</Link>
       <Link to="/">Tribes</Link>
       <Link to="/wpefok">404</Link>
-    </div> */}
+    </div>
     {children}
   </div>
 );
