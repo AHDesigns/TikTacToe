@@ -9,3 +9,16 @@ The structure is divided into
 Server & Client
 
 The server runs on node.js
+
+techs
+
+React
+Redux
+React-Router
+Node.js
+Express
+Mongodb
+EsLint
+Webpack
+Es2015
+
