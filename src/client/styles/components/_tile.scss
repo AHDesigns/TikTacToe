@@ -1,0 +1,52 @@
+$boardWidth: 600px;
+
+$tileWidth: calc(#{$boardWidth} / 3);
+$tileMargin: 4px;
+
+.c-board {
+  margin: 50px auto;
+  max-width: calc(#{$boardWidth} + (#{$tileMargin} * 10));
+  overflow: hidden;
+}
+.c-tile {
+  width: $tileWidth;
+  height: $tileWidth;
+  margin: $tileMargin;
+  display: inline-block;
+}
+
+.c-tile-notClicked {
+  background-color: rgb(210, 144, 57);
+  &:hover {
+    background-color: rgb(232, 198, 152);
+  }
+}
+.c-tile-clicked {
+  background-color: rgb(112, 64, 7);
+  &:hover {
+    background-color: rgb(194, 72, 33);
+  }
+}
+
+.c-tile-nought {
+  background-image: url('/img/svg/nought.svg');
+  background-size: cover;
+}
+
+.c-tile-cross {
+  background-image: url('/img/svg/cross.svg');
+  background-size: cover;
+}
+
+.c-player {
+  width: 50px;
+  height: 20px;
+}
+
+.c-player-noughts {
+  background-color: red;
+}
+
+.c-player-crosses {
+  background-color: blue;
+}

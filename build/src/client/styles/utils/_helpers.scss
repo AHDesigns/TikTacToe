@@ -1,0 +1,38 @@
+.vAlign {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+.capsLock {
+  text-transform: uppercase;
+}
+.heightfix {
+  height: 100%;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+   float: left;
+}
+.o-layout {
+    margin-left: 0px;
+}
+.o-layout__item {
+  padding-left: 0px;
+}
+.c-tile {
+    padding-left: 5px;
+}
+.space {
+    padding-left: 30px;
+}
+.spacer {
+  height: 50px;
+}
+.noDisplay {
+  display: none;
+}
+#element::-webkit-scrollbar {
+    display: none;
+}

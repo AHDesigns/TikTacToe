@@ -1,0 +1,13 @@
+.primaryHeading {
+  height: 100px;
+  text-align: center;
+  color: $colPrimaryAccent--faded;
+}
+
+.myImg {
+  background-image: url('/img/prog.jpg');
+  background-color: rgb(245, 181, 18);
+  width: 1000px;
+  height: 400px;
+  background-size: contain;
+}

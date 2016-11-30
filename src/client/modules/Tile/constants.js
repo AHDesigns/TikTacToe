@@ -1,0 +1,3 @@
+export const CLICK_TILE = 'CLICK_TILE';
+export const INITIALISE_TILE = 'INITIALISE_TILE';
+export const RESTART_GAME = 'RESTART_GAME';
