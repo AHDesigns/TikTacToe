@@ -6,7 +6,7 @@ export function servePage(app) {
     <!DOCTYPE html>
     <html>
       <head>
-        <title>Coming Soon</title>
+        <title>Tic Tak Toe</title>
         <link rel="stylesheet" href="/css/bundle.css">
         <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
       </head>
